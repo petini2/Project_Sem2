@@ -1,0 +1,48 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.create{
+    margin-right: 20px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+
+.head{
+    margin: 10px 0;
+    height: 40px;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.title span{    
+    background: -webkit-linear-gradient(rgba(236,82,134,1), rgb(236, 132, 63));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.fa-chevron-right{
+    color: #8b8ee7;
+    padding: 0 5px;
+}
+
+
+#Action{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.insert{
+    width: 58%;
+    color:#fff;
+    margin-left: 250px;
+    margin-top: 55px;
+}

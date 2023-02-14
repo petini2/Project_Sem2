@@ -1,0 +1,71 @@
+/* Index */
+.grid{
+    min-height: 525px;
+    display: grid;
+    margin-top: 60px;
+    text-align: center;;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 20px !important;
+}
+.cardSeat{    
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 85px;
+    border-radius: 20px;
+    padding: 3px 0;
+}
+
+.Price{
+    color: black;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#SeatAction{
+    margin: 0 35px;
+}
+
+#SeatAction btn{
+    margin-top: -2rem;
+    font-size: 13px;
+    width: 40px;
+}
+
+#EditDelete{
+    padding: 2px 5px;
+    height: 25px;
+    margin-top: -4rem;
+}
+
+.insert{
+    border: 5px solid rgb(255, 81, 139);
+    background: #d3d3d3;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000;
+}
+
+.form-create-form-group strong{
+    margin-bottom: 10px;
+}
+
+.create-form-group input{
+    background-color: black;
+}
+
+.edit-form-group strong{
+    color:#fff;
+    margin-bottom: 0.5rem;
+}
+
+.edit-form-group{    
+    width: 150px;
+}
+
+.edit-form-group input{    
+    height: 30px;
+}
+
+.edit{    
+    min-height: 568px;
+}

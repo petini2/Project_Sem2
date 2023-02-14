@@ -1,0 +1,31 @@
+.btn-lg{
+    width: 160px;
+    background: linear-gradient(90deg, rgba(236,82,134,1) 0%, rgba(254,160,98,1) 50%, rgba(236,82,134,1) 100%);
+}
+
+.insert{
+    min-height: 565px;
+    padding-top: 120px;
+}
+
+.list{
+    min-height: 555px;
+}
+
+form{
+    margin-top: 0 !important;
+}
+
+.form-group strong{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.table{
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 60px;
+}
+
+.table th{
+    font-weight: bold;
+}

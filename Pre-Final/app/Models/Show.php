@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Show extends Model
+{
+    use HasFactory;
+    protected $table = 'shows';
+
+    public $timestamps = false;
+
+    protected $fillable = [
+        'MovieID',
+        'ShowtimeID',
+        'ScreenNo'
+    ];
+
+    public function showtime(){
+        return $this->belongsTo(Showtime::class);
+    }
+}

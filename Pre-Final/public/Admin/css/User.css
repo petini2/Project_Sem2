@@ -1,0 +1,33 @@
+.create {
+    margin-top: 10px;
+}
+
+.list {
+    min-height: 568px;
+}
+
+.table {
+    width: 98%;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+
+/*Print View */
+
+.list-print {
+    margin: 10px;
+}
+
+.logo-menu {
+    margin: 5px;
+}
+
+.print-table {
+    width: 95%;
+    margin: 4rem;
+}
+
+.print-table tr {
+    line-height: 20px;
+}

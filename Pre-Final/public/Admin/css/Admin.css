@@ -1,0 +1,104 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Graph{
+    min-height: 665px;
+    width: 55%;
+    padding: 50px;
+}
+
+#Greet{
+    height: 84px;
+    width: 103%;
+    background-color: #171829;
+    padding: 25px;
+    margin-left: -2rem;
+}
+
+#Greet .pull-left {
+    padding-left: 65px;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #ef5174;
+    margin-top: -1rem;
+}
+
+#Greet .pull-right {
+    margin-right: 15px;
+    color: #ff5860;
+    font-size: 18px;
+    margin-top: -0.6rem;
+}
+
+.text-center{
+    text-transform: uppercase;
+}
+
+#MovieInfo{    
+    border: 5px solid rgb(255, 81, 139);
+    background-color: rgb(245, 245, 245);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#MovieInfo p {
+    font-size: 25px;
+}
+
+#piechart{
+    width: 500px;
+    height: 300px;
+}
+.Total{
+    width: 150px;
+    background-color: azure;
+    width: 180px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 15px;
+    padding-right: 5px;
+    border: solid 2px #ef5174;
+    position: absolute;
+}
+
+.Total i{
+    position: absolute;
+    margin-right:30px ;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #ef5174;
+}
+
+.Total span{
+    margin-left: 80px;
+    font-size: 35px;
+    position: absolute;
+}
+
+.Total strong{
+    margin-top: 40px;
+    font-size: 15px;
+    margin-left: 80px;
+    position: absolute;
+}
+
+.sumData{
+    padding: 20px;
+}
+
+.sumData tr{
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.sumData td{
+    padding-left: 20px;
+    width: 250px !important;
+}
+
+.sumData td a:hover{
+    color:#ff5860;
+}
+
+

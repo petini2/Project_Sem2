@@ -1,0 +1,159 @@
+.btn-lg{
+    width: 160px;
+    background: linear-gradient(90deg, rgba(236,82,134,1) 0%, rgba(254,160,98,1) 50%, rgba(236,82,134,1) 100%);
+}
+
+/* Index */
+
+.back-link{    
+    color: #8b8ee7;
+}
+
+.btn-lg{
+    width: 160px;
+    background: linear-gradient(90deg, rgba(236,82,134,1) 0%, rgba(254,160,98,1) 50%, rgba(236,82,134,1) 100%);
+}
+
+.card{
+    width: 100%;
+    height: 340px;
+    margin: 10px;
+    background: none;
+    border-radius: 20px;
+}
+
+.card-title{
+    background: none;
+    width: 180px;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 25px;
+    color: #e52552;
+}
+
+
+
+/* Show */
+
+.listcast{
+    width: 350px;
+    height: 370px;
+    margin-bottom: 100px;
+}
+
+.grid{
+    min-height: 550px;
+    display: grid;
+    margin-top: 55px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 15px !important;
+}
+
+#CastPic{
+    margin-top: 10px;
+    margin-left: 5px;
+    width:  339px;
+    height: 253px;
+    border-radius: 15px;
+}
+
+p{
+    text-align: center;
+    color: #e52552;
+    font-weight: bold;
+}
+
+p strong{
+    text-shadow: #b12042 0.5px 0.5px 1px;
+}
+
+
+#Name{
+    margin-top: 15px;
+}
+
+#CastAction{
+    display: inline-block;
+    margin: 0;
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+#EditCast{
+    width: 90px;
+    margin: 0;
+}
+
+.flex-column{
+    background: #fff;
+    border-radius: 15px;
+}
+
+/*Show*/
+
+#MovieDetail{
+    border-radius: 50px;
+    margin-top: 35px;
+    min-height: 565px;
+    margin-left: 230px;
+    width: 60%;
+    background: #fff;
+    border: solid 5px #e52552;
+}
+
+#OfferPic{    
+    margin-left: 15px;
+    margin-top: 25px;
+    width:  685px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.MovieInfo{    
+    margin-right: 20px;
+    margin-top: 25px;
+    width: 98%;
+}
+
+.MovieInfo p{
+    margin-top: 30px;
+}
+
+#Trailer{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#Trailer iframe{
+    border-radius: 15px;
+    width: 95%;
+    height: 335px;
+}
+
+/* Edit */
+.edit{
+    width: 58%;
+    color:#fff;
+    margin-left: 250px;
+    margin-top: 55px;    
+    height: 565px;
+}
+
+.edit button{
+    margin-left: 90px;
+    margin-top:200px;
+}
+
+.edit a{
+    margin-left: 20px;
+    margin-top:200px;
+}
+
+#Gender{
+    border-radius:5px; 
+    background: rgb(35 36 54); 
+    margin-left:15px; 
+    color: rgb(255 249 249);
+}
