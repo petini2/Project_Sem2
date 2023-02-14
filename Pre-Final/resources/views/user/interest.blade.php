@@ -178,7 +178,8 @@
 					<h2 class="section__title">Some Suggestion For You</h2>
 				</div>
 				<!-- end section title -->
-                @foreach($suggestedMovies as $movie)
+                @foreach($suggestedMovies as $key => $movie)
+                @if($key<6)
 				<!-- card -->
 				<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 					<div class="card">
@@ -198,12 +199,13 @@
 					</div>
 				</div>
 				<!-- end card -->
+                @endif
                 @endforeach
 
 
 				<!-- section btn -->
 				<div class="col-12">
-					<a href="#" class="section__btn">Show more</a>
+					<a href="{{ url('cataloge') }}" class="section__btn">Show more</a>
 				</div>
 				<!-- end section btn -->
 			</div>
