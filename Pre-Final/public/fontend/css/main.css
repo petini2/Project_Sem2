@@ -1252,6 +1252,14 @@ ul {
 .card {
   margin-bottom: 50px;
 }
+.card__btn button{
+    color: white;
+    font-size: 30px;
+    margin-right: 60px;
+}
+.card__btn:hover button{
+    color: #ff5860;
+}
 .card__cover {
   position: relative;
   -webkit-box-shadow: none;
@@ -1292,6 +1300,51 @@ ul {
 .card__cover:hover .card__play {
   opacity: 1;
 }
+/* interestedcard */
+.card__padding{
+    padding: 30px;
+}
+.card__icover {
+    position: relative;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .card__icover img {
+    width: 180px;
+    height: 240px;
+  }
+  .card__icover:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -moz-linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+    background-image: -webkit-linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+    background-image: -ms-linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+    background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .card__icover:hover {
+    -webkit-box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+  }
+  .card__icover:hover:before {
+    opacity: 0.65;
+  }
+  .card__icover:hover .card__play {
+    opacity: 1;
+  }
+
 .card__play {
   position: absolute;
   display: flex;
@@ -1399,6 +1452,17 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #ff5860;
+}
+.card__detail {
+    font-size: 14px;
+  position: relative;
+  background-image: -webkit-linear-gradient(0deg, #ff55a5 0%, #ff5860 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ff5860;
+  margin-right: 7px;
+  opacity: 0.8;
+  font-family: 'Open Sans', sans-serif;
 }
 .card__list {
   display: none;
@@ -3777,7 +3841,7 @@ button.prev{
 }
 .slide-quang-cao button:hover{
   opacity: 1;
-  transition: 0.3s; 
+  transition: 0.3s;
 }
 .next:hover #next-slide{
   color: white !important;

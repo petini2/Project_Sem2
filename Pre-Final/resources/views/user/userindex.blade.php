@@ -125,6 +125,7 @@
                                         </form>
                                 </li>
                                 <li><a href="{{ url('edit') }}" class="ionios">Edit profile</a></li>
+                                <li><a href="{{route('user.interest')}}">Interest</a></li>
                                 </ul>
                                 </li>
                             </div>

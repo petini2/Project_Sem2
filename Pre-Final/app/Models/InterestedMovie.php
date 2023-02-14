@@ -9,7 +9,7 @@ class InterestedMovie extends Model
 {
     use HasFactory;
 
-    protected $table='interestedmovies';
+    protected $table='interstedmovies';
     public $timestamps = false;
 
     protected $fillable = [

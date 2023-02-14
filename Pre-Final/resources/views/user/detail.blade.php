@@ -112,6 +112,7 @@
                                         </form>
                                 </li>
                                 <li><a href="{{ url('edit') }}" class="ionios">Edit profile</a></li>
+                                <li><a href="{{route('user.interest')}}">Interest</a></li>
                                 </ul>
                                 </li>
                             </div>
@@ -199,6 +200,10 @@
                                         <li><span>Running time:</span> {{ $movies->Duration }}</li>
                                         <li><span>Language:</span> <a href="#">{{ $movies->Language }}</a>
                                         </li>
+                                        <li><span class="card__btn"> <form action="{{ route('user.markinterest', $movies->id) }}" method="POST">
+                                            @csrf
+                                            <button type="submit" class="ion ion-md-heart"></button>
+                                        </form></span></li>
                                     </ul>
 
                                     <div class="card__description card__description--details">

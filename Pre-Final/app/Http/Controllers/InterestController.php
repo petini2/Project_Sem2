@@ -11,8 +11,8 @@ class InterestController extends Controller
     public function store(Request $request, $id)
     {
         $interest = InterestedMovie::where([
-            'movieid' => $id,
-            'userid' => auth()->id(),
+            'MovieID' => $id,
+            'UserID' => auth()->id(),
         ])->first();
 
         if ($interest) {
@@ -21,8 +21,8 @@ class InterestController extends Controller
         } else {
             $movie = Movie::find($id);
             $interest = InterestedMovie::create([
-                'movieid' => $movie->id,
-                'userid' => auth()->id(),
+                'MovieID' => $movie->id,
+                'UserID' => auth()->id(),
             ]);
             return redirect()->back()->with('success', 'You have shown interest in '.$movie->name.' movie');
         }
@@ -30,10 +30,10 @@ class InterestController extends Controller
 
     public function index()
     {
-        $interests = InterestedMovie::where('userid', auth()->id())->get();
+        $interests = InterestedMovie::where('UserID', auth()->id())->get();
         $movies = [];
         foreach ($interests as $interest) {
-            $movie = Movie::find($interest->movieid);
+            $movie = Movie::find($interest->MovieID);
             if ($movie) {
                 $movies[] = $movie;
             }
