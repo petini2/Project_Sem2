@@ -76,13 +76,13 @@
 
                                 <!-- dropdown -->
                                 <li class="header__nav-item">
-                                    <a class="dropdown-toggle header__nav-link" href="#">Show</a>
+                                    <a class="dropdown-toggle header__nav-link" href="{{ route('alertn') }}">Show</a>
                                 </li>
                                 <!-- end dropdown -->
 
                                 <!-- dropdown -->
                                 <li class="header__nav-item">
-                                    <a class="dropdown-toggle header__nav-link" href="#">News &
+                                    <a class="dropdown-toggle header__nav-link" href="{{ route('alertn') }}">News &
                                         Offers</a>
                                 </li>
                                 <!-- end dropdown -->
@@ -94,7 +94,7 @@
                                         aria-expanded="false"><i class="icon ion-ios-more"></i></a>
 
                                     <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
-                                        <li><a href="#">About</a></li>
+                                        <li><a href="{{url('about')}}">About</a></li>
 
 
                                     </ul>

@@ -68,14 +68,14 @@
 								</li> --}}
 
                                 <li class="header__nav-item">
-                                    <a href="{{ url('cataloge') }}" class="dropdown-toggle header__nav-link"
+                                    <a href="#" class="dropdown-toggle header__nav-link"
                                         id="dropdownMenuHome">Movies</a>
                                 </li>
                                 <!-- end dropdown -->
 
                                 <!-- dropdown -->
                                 <li class="header__nav-item">
-                                    <a class="dropdown-toggle header__nav-link" href="{{ url('newsandoffers') }}">News &
+                                    <a class="dropdown-toggle header__nav-link" href="{{ route('alertn') }}">News &
                                         Offers</a>
                                 </li>
                                 <!-- end dropdown -->
@@ -88,7 +88,7 @@
                                         aria-expanded="false"><i class="icon ion-ios-more"></i></a>
 
                                     <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
-                                        <li><a href="{{ url('About') }}">About</a></li>
+                                        <li><a href="{{url('about')}}">About</a></li>
                                     </ul>
                                 </li>
                                 <!-- end dropdown -->
@@ -417,6 +417,7 @@
         <script src="fontend/js/photoswipe.min.js"></script>
         <script src="fontend/js/photoswipe-ui-default.min.js"></script>
         <script src="fontend/js/main.js"></script>
+        @include('sweetalert::alert')
 </body>
 
 </html>

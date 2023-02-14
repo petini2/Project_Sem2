@@ -68,25 +68,27 @@
 								</li> --}}
 
                                 <li class="header__nav-item">
-                                    <a href="{{ url('cataloge') }}" class="dropdown-toggle header__nav-link"
+                                    <a href="{{url('/gcataloge')}}" class="dropdown-toggle header__nav-link"
                                         id="dropdownMenuHome">Movies</a>
                                 </li>
                                 <!-- end dropdown -->
 
                                 <!-- dropdown -->
                                 <li class="header__nav-item">
-                                    <a class="dropdown-toggle header__nav-link" href="{{ url('newsandoffers') }}">News
+                                    <a class="dropdown-toggle header__nav-link" href="{{ route('alertn') }}">News
                                         &
                                         Offers</a>
                                 </li>
                                 <!-- end dropdown -->
                                 <!-- dropdown -->
                                 <li class="dropdown header__nav-item">
-                                    <a class="dropdown-toggle header__nav-link header__nav-link--more" href="#"
-                                        role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false"><i class="icon ion-ios-more"></i></a>
+									<a class="dropdown-toggle header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon ion-ios-more"></i></a>
 
-                                </li>
+									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
+										<li><a href="{{url('about')}}">About</a></li>
+
+									</ul>
+								</li>
                                 <!-- end dropdown -->
                             </ul>
                             <!-- end header nav -->
@@ -192,7 +194,7 @@
                                             @csrf
                                             <button type="submit" class="ion ion-md-heart"></button>
                                         </form></span></li>
-                                        <a href="{{ asset('login') }}" class="header__sign-in">
+                                        <a href="{{ route('alertn') }}" class="header__sign-in">
                                             <i class="icon ion-ios-log-in"></i>
                                             <span>Buy ticket</span>
                                         </a>

@@ -36,6 +36,7 @@ Route::get('/About', function(){
 Route::get('/cataloge', [FrontendMovieController::class, 'index'])->name('user.cataloge');
 
 Route::get('/detail/{id}', [FrontendCastListsController::class,'show'])->name('user.detail');
+
 Route::get('/faq', function(){
     return view('user.faq');
 });
@@ -49,11 +50,12 @@ Route::post('/interestmovie/{id}', [InterestController::class, 'store'])->name('
 
 Route::get('/interest', 'InterestController@index')->name('user.interest');
 
-Route::get('/movieshowing', 'MovieController@index')->name('user.movieshowing');
+
 
 Route::patch('user/{user}/update', 'UserController@update')->name('user.update');
 
 Route::post('/alert', 'AlertController@store')->name('alert');
+Route::get('/alert', 'AlertController@store')->name('alertn');
 
 Route::get('/showbooking',[FrontendBookingController::class, 'index'])->name('user.booking');
 // user
@@ -71,3 +73,6 @@ Route::resource('/newsoffer', OfferController::class);
 Route::get('/',[FrontendMovieController::class, 'guest'])->name('guest.layout');
 Route::get('/gcataloge', 'GuestController@cataloge');
 Route::get('/gdetail/{id}', [FrontendCastListsController::class,'gshow'])->name('guest.detail');
+Route::get('/about', function(){
+    return view('guest.about');
+});

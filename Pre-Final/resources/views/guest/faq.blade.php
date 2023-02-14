@@ -75,7 +75,7 @@
 
                                     <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
                                         <li><a href="{{ url('about') }}">About</a></li>
-                                        <li><a href="404.html">404 Page</a></li>
+
                                     </ul>
                                 </li>
                                 <!-- end dropdown -->

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use App\Models\InterestedMovie;
 use Illuminate\Http\Request;
 use App\Models\Movie;
@@ -38,8 +38,20 @@ class InterestController extends Controller
                 $movies[] = $movie;
             }
         }
+        $user_id = auth()->id();
+        $suggestedMovies = DB::table('movies')
+            ->whereNotExists(function ($query) use ($user_id) {
+                $query->select(DB::raw(1))
+                    ->from('interstedmovies')
+                    ->whereRaw('interstedmovies.MovieID = movies.id')
+                    ->whereRaw("interstedmovies.UserID = $user_id");
+            })
+            ->get();
+
         return view('user.interest', [
             'movies' => $movies,
+            'suggestedMovies' => $suggestedMovies,
         ]);
     }
+
 }
