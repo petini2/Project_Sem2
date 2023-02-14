@@ -10,7 +10,7 @@ use App\Http\Controllers\Frontend\MovieController as FrontendMovieController;
 use App\Http\Controllers\Frontend\OffersController as FrontendOffersController;
 use App\Http\Controllers\Frontend\CastListsController as FrontendCastListsController;
 use App\Http\Controllers\Frontend\BookingController as FrontendBookingController;
-
+use App\Http\Controllers\ContactController;
 
 
 /*
@@ -76,3 +76,8 @@ Route::get('/gdetail/{id}', [FrontendCastListsController::class,'gshow'])->name(
 Route::get('/about', function(){
     return view('guest.about');
 });
+//contact
+Route::get('/contact', function(){
+    return view('guest.contact');
+});
+Route::post('/storecontact', [ContactController::class, 'store'])->name('contact.store');
