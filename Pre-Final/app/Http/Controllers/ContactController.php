@@ -3,32 +3,27 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactFormSubmitted;
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Models\User;
 
 class ContactController extends Controller
 {
-    public function index()
+    public function contact()
     {
-        return view('guest.contact');
+        return view('contact-us');
     }
 
-    public function store(Request $request)
-    {
-        $validatedData = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'message' => 'required',
-        ]);
+    public function sendEmail(Request $request){
+        $details = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phonenum' => $request->phonenum,
+            'msg' => $request->msg,
+        ];
 
-        // Get admin user
-        $adminUser = User::where('isAdmin', true)->first();
-
-        // Send email to admin
-        Mail::to($adminUser->email)->send(new ContactFormSubmitted($validatedData));
-
-        // Return success message
-        return redirect()->back()->with('success', 'Your message has been sent!');
+        Mail::to('khiemnguyen7905@gmail.com')->send(new ContactMail($details));
+        return back()->with('message_send', 'Your message has been send');
     }
 }

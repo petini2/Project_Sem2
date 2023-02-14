@@ -6,11 +6,12 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Frontend\MovieController as FrontendMovieController;
 use App\Http\Controllers\Frontend\OffersController as FrontendOffersController;
 use App\Http\Controllers\Frontend\CastListsController as FrontendCastListsController;
 use App\Http\Controllers\Frontend\BookingController as FrontendBookingController;
-use App\Http\Controllers\ContactController;
+
 
 
 /*
@@ -77,7 +78,8 @@ Route::get('/about', function(){
     return view('guest.about');
 });
 //contact
-Route::get('/contact', function(){
-    return view('guest.contact');
-});
-Route::post('/storecontact', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/contact-us', [ContactController::class, 'contact']);
+
+Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
+
+
