@@ -21,13 +21,12 @@
 	<link rel="stylesheet" href="fontend/css/main.css">
 
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="fontend/icon/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="fontend/icon/logo.png" sizes="32x32">
 	<link rel="apple-touch-icon" href="fontend/icon/logo.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="fontend/icon/logo.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="fontend/icon/logo.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="fontend/icon/logo.png">
 
-	@include('sweetalert::alert')
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Dmitry Volkov">

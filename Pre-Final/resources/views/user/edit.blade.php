@@ -92,7 +92,7 @@
                 <h2>Edit</h2>
             </div>
             <div class="float-right">
-                <a href="{{ url('profile') }}" class="text-white decoration-none">Back</a>
+                <a href="{{route('home')}}" class="text-white decoration-none">Back</a>
             </div>
         </div>
     </div>
@@ -137,6 +137,14 @@
                                 @enderror
                                 </div>
 
+                                <div class="sign__group">
+                                    <input id="phonenum" type="text" name="phonenum" required autocomplete="current-phonenum" class="sign__input" placeholder="PhoneNumber" value="{{ $user->phonenum }}">
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                </div>
 
                                 <button type="submit" class="sign__btn">
                                     {{ __('Save') }}

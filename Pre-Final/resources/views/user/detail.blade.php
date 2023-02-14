@@ -21,16 +21,16 @@
     <link rel="stylesheet" href="{{ url('fontend/css/main.css') }}">
 
     <!-- Favicons -->
-    <link rel="icon" type="fontend/image/png" href="fontend/icon/favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="fontend/icon/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="fontend/icon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="fontend/icon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="fontend/icon/apple-touch-icon-144x144.png">
+    <link rel="icon" type="image/png" href="fontend/icon/logo.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="fontend/icon/logo.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="fontend/icon/logo.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="fontend/icon/logo.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="fontend/icon/logo.png">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Dmitry Volkov">
-    <title>FlixGo – Online Movies, TV Shows & Cinema HTML Template</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>HUMMING CINEMA</title>
 
 </head>
 
@@ -204,6 +204,10 @@
                                             @csrf
                                             <button type="submit" class="ion ion-md-heart"></button>
                                         </form></span></li>
+                                        <a href="#" class="header__sign-in">
+                                            <i class="icon ion-ios-log-in"></i>
+                                            <span>Buy ticket</span>
+                                        </a>
                                     </ul>
 
                                     <div class="card__description card__description--details">

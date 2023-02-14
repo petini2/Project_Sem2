@@ -22,16 +22,16 @@
 
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="fontend/icon/BEAN.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="fontend/icon/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="fontend/icon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="fontend/icon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="fontend/icon/apple-touch-icon-144x144.png">
+    <link rel="icon" type="image/png" href="fontend/icon/logo.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="fontend/icon/logo.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="fontend/icon/logo.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="fontend/icon/logo.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="fontend/icon/logo.png">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Dmitry Volkov">
-    <title>BEAN CINEMA</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>HUMMING CINEMA</title>
 
 </head>
 
@@ -69,7 +69,7 @@
 								</li> --}}
 
                                 <li class="header__nav-item">
-                                    <a href="#" class="dropdown-toggle header__nav-link"
+                                    <a href="{{url('/gcataloge')}}" class="dropdown-toggle header__nav-link"
                                         id="dropdownMenuHome">Movies</a>
                                 </li>
                                 <!-- end dropdown -->
@@ -239,16 +239,16 @@
                                     <div class="card">
                                         <div class="card__cover">
                                             <img src="{{asset('Admin/img/movie/'.$movie->ImgURL)}}" alt="">
-                                            <a href="#" class="card__play">
+                                            <a href="{{ url('gdetail', $movie->id) }}" class="card__play">
                                                 <i class="icon ion-ios-play"></i>
                                             </a>
                                         </div>
                                         <div class="card__content">
                                             <h3 class="card__title"><a
-                                                    href="#">{{ $movie->MovieName }}</a>
+                                                    href="{{ url('gdetail', $movie->id) }}">{{ $movie->MovieName }}</a>
                                             </h3>
                                             <span class="card__category">
-                                                <a href="#">{{ $movie->Genre }}</a>
+                                                <a href="{{ url('gdetail', $movie->id) }}">{{ $movie->Genre }}</a>
                                             </span>
                                         </div>
                                     </div>
@@ -272,16 +272,16 @@
                                     <div class="card">
                                         <div class="card__cover">
                                             <img src="{{asset('Admin/img/movie/'.$movie->ImgURL)}}" alt="">
-                                            <a href="#" class="card__play">
+                                            <a href="{{ url('gdetail', $movie->id) }}" class="card__play">
                                                 <i class="icon ion-ios-play"></i>
                                             </a>
                                         </div>
                                         <div class="card__content">
                                             <h3 class="card__title"><a
-                                                    href="#">{{ $movie->MovieName }}</a>
+                                                    href="{{ url('gdetail', $movie->id) }}">{{ $movie->MovieName }}</a>
                                             </h3>
                                             <span class="card__category">
-                                                <a href="#">{{ $movie->Genre }}</a>
+                                                <a href="{{ url('gdetail', $movie->id) }}">{{ $movie->Genre }}</a>
                                             </span>
                                         </div>
                                     </div>

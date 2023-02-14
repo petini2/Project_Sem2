@@ -21,9 +21,14 @@ class CastListsController extends Controller
     public function show($id){
         $movies = Movie::find($id);
         return view('user.detail', compact('movies'));
-    
+
+    }
+    public function gshow($id){
+        $movies = Movie::find($id);
+        return view('guest.detail', compact('movies'));
+
     }
 
-    
+
 
 }

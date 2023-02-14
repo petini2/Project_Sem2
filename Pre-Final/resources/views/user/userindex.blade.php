@@ -22,16 +22,16 @@
     <link rel="stylesheet" href="fontend/css/home.css">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="fontend/icon/BEAN.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="fontend/icon/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="fontend/icon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="fontend/icon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="fontend/icon/apple-touch-icon-144x144.png">
+    <link rel="icon" type="image/png" href="fontend/icon/logo.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="fontend/icon/logo.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="fontend/icon/logo.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="fontend/icon/logo.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="fontend/icon/logo.png">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Dmitry Volkov">
-    <title>BEAN CINEMA</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>HUMMING CINEMA</title>
 
 </head>
 

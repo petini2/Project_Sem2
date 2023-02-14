@@ -28,9 +28,6 @@ use App\Http\Controllers\Frontend\BookingController as FrontendBookingController
 // user
 Auth::routes();
 Route::get('/home',[HomeController::class, 'index'])->name('home');
-//guest
-Route::get('/',[FrontendMovieController::class, 'guest'])->name('guest.layout');
-
 //user
 Route::get('/userindex', [FrontendMovieController::class, 'userindex'])->name('user.userindex');
 Route::get('/About', function(){
@@ -56,7 +53,7 @@ Route::get('/movieshowing', 'MovieController@index')->name('user.movieshowing');
 
 Route::patch('user/{user}/update', 'UserController@update')->name('user.update');
 
-Route::get('/alert', 'AlertController@store')->name('alert');
+Route::post('/alert', 'AlertController@store')->name('alert');
 
 Route::get('/showbooking',[FrontendBookingController::class, 'index'])->name('user.booking');
 // user
@@ -70,3 +67,7 @@ Route::resource('/castlist', ACastlistController::class);
 Route::resource('/auser', AUserController::class);
 Route::resource('/newsoffer', OfferController::class);
 //admin
+//guest
+Route::get('/',[FrontendMovieController::class, 'guest'])->name('guest.layout');
+Route::get('/gcataloge', 'GuestController@cataloge');
+Route::get('/gdetail/{id}', [FrontendCastListsController::class,'gshow'])->name('guest.detail');
