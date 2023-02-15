@@ -43,40 +43,41 @@
 					<div class="sign__content">
 						<!-- registration form -->
 						<form method="POST" action="{{route('register')}}" class="sign__form">
+
                             @csrf
-							<a href="/" class="sign__logo">
-								<img src="fontend/img/logotest2.png" alt="">
-							</a>
+                            <a href="/" class="sign__logo">
+                                <img src="fontend/img/logotest2.png" alt="">
+                            </a>
 
-							<div class="sign__group">
-								<input type="text" class="sign__input" placeholder="Firstname" id="name @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-                            @error('name')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
+                            <div class="sign__group">
+                                <input type="text" class="sign__input" placeholder="Firstname" id="name" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
 
                             <div class="sign__group">
-								<input type="text" class="sign__input" placeholder="Lastname" id="lastname @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus>
-                            @error('lastname')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                            </div>
-
-							<div class="sign__group">
-								<input type="email" class="sign__input" placeholder="Email" id="email" @error('email') is-invalid @enderror name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                            @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
+                                <input type="text" class="sign__input" placeholder="Lastname" id="lastname" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus>
+                                @error('lastname')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
 
                             <div class="sign__group">
-                                <input id="phonenum" type="phonenum" class="sign__input" placeholder="PhoneNumber" @error('phonenum') is-invalid @enderror" name="phonenum" required autocomplete="phonenum" autofocus>
+                                <input type="email" class="sign__input" placeholder="Email" id="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+
+                            <div class="sign__group">
+                                <input id="phonenum" type="phonenum" class="sign__input" placeholder="PhoneNumber" name="phonenum" required autocomplete="phonenum" autofocus>
                                 @error('phonenum')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -84,8 +85,8 @@
                                 @enderror
                             </div>
 
-							<div class="sign__group">
-                                <input id="password" type="password" class="sign__input" placeholder="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" autofocus>
+                            <div class="sign__group">
+                                <input id="password" type="password" class="sign__input" placeholder="Password" name="password" required autocomplete="new-password" autofocus>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
