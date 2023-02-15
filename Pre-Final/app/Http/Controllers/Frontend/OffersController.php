@@ -14,4 +14,9 @@ class OffersController extends Controller
         $picName = "";
         return view('user.offers', compact('offers','picName'));
     }
+    public function gindex(){
+        $offers = Offer::all();
+        $picName = "";
+        return view('guest.offers', compact('offers','picName'));
+    }
 }

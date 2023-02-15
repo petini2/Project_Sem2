@@ -42,6 +42,7 @@ Route::get('/faq', function(){
     return view('user.faq');
 });
 Route::get('/newsandoffers', [FrontendOffersController::class, 'index'])->name('user.offers');
+Route::get('/gnewsandoffers', [FrontendOffersController::class, 'gindex'])->name('guest.offers');
 
 Route::get('/search', [FrontendMovieController::class, 'search'])->name('user.search');
 Route::get('/edit', function(){

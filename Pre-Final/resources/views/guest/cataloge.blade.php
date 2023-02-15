@@ -75,7 +75,7 @@
 
                                 <!-- dropdown -->
                                 <li class="header__nav-item">
-                                    <a class="dropdown-toggle header__nav-link" href="{{ route('alertn') }}">News &
+                                    <a class="dropdown-toggle header__nav-link" href="{{ url('gnewsandoffers') }}">News &
                                         Offers</a>
                                 </li>
                                 <!-- end dropdown -->
