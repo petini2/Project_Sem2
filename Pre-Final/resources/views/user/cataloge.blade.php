@@ -80,15 +80,7 @@
                                     <a class="dropdown-toggle header__nav-link" href="{{ url('contact-us') }}">Contact us</a>
                                 </li>
                                 <!-- dropdown -->
-                                <li class="dropdown header__nav-item">
-                                    <a class="dropdown-toggle header__nav-link header__nav-link--more" href="#"
-                                        role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false"><i class="icon ion-ios-more"></i></a>
 
-                                    <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
-                                        <li><a href="{{ url('About') }}">About</a></li>
-                                    </ul>
-                                </li>
                                 <!-- end dropdown -->
                             </ul>
                             <!-- end header nav -->
@@ -237,7 +229,7 @@
                     <div class="col-6 col-sm-4 col-md-3">
                         <h6 class="footer__title">Resources</h6>
                         <ul class="footer__list">
-                            <li><a href="#">About Us</a></li>
+
                         </ul>
                     </div>
                     <!-- end footer list -->

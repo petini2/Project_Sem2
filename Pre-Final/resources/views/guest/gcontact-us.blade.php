@@ -89,17 +89,7 @@
                                 <!-- end dropdown -->
 
                                 <!-- dropdown -->
-                                <li class="dropdown header__nav-item">
-                                    <a class="header__nav-link header__nav-link--more" href="#"
-                                        role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false"><i class="icon ion-ios-more"></i></a>
 
-                                    <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
-                                        <li><a href="{{url('about')}}">About</a></li>
-
-
-                                    </ul>
-                                </li>
                                 <!-- end dropdown -->
                             </ul>
                             <!-- end header nav -->

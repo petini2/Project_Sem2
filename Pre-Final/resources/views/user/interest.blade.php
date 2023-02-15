@@ -299,7 +299,7 @@
 				<div class="col-6 col-sm-4 col-md-3">
 					<h6 class="footer__title">Resources</h6>
 					<ul class="footer__list">
-						<li><a href="{{url('About')}}">About Us</a></li>
+
 						<li><a href="#">Pricing Plan</a></li>
 
 					</ul>
