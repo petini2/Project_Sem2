@@ -12,10 +12,16 @@ class ContactController extends Controller
 {
     public function contact()
     {
-        return view('contact-us');
+        $user = User::find(auth()->user()->id);
+        return view('user.contact-us', compact('user'));
+    }
+    public function gcontact()
+    {
+        return view('guest.gcontact-us');
     }
 
     public function sendEmail(Request $request){
+        $user = User::find($request->UserID);
         $details = [
             'name' => $request->name,
             'email' => $request->email,

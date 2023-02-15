@@ -79,7 +79,9 @@
                                         Offers</a>
                                 </li>
                                 <!-- end dropdown -->
-
+                                <li class="header__nav-item">
+                                    <a class="dropdown-toggle header__nav-link" href="{{url('gcontact-us')}}">Contact Us</a>
+                                </li>
 
                                 <!-- dropdown -->
                                 <li class="dropdown header__nav-item">

@@ -90,6 +90,9 @@
                                     <a href="pricing.html" class="header__nav-link header__nav-link--active">Pricing
                                         Plan</a>
                                 </li>
+                                <li class="header__nav-item">
+                                    <a class="dropdown-toggle header__nav-link" href="{{ url('contact-us') }}">Contact us</a>
+                                </li>
                                 <!-- dropdown -->
                                 <li class="dropdown header__nav-item">
                                     <a class="dropdown-toggle header__nav-link header__nav-link--more" href="#"

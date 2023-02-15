@@ -86,7 +86,9 @@
                                         Offers</a>
                                 </li>
                                 <!-- end dropdown -->
-
+                                <li class="header__nav-item">
+                                    <a class="dropdown-toggle header__nav-link" href="{{url('gcontact-us')}}">Contact Us</a>
+                                </li>
                                 <!-- dropdown -->
                                 <li class="dropdown header__nav-item">
                                     <a class="dropdown-toggle header__nav-link header__nav-link--more" href="#"
@@ -95,8 +97,6 @@
 
                                     <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
                                         <li><a href="{{url('about')}}">About</a></li>
-
-
                                     </ul>
                                 </li>
                                 <!-- end dropdown -->

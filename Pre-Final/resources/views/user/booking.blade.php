@@ -13,6 +13,7 @@
                         <ul class="breadcrumb">
                             <li class="breadcrumb__item"><a href="{{ url('userindex') }}">Home</a></li>
                             <li class="breadcrumb__item breadcrumb__item--active">Show</li>
+
                         </ul>
                         <!-- end breadcrumb -->
                     </div>

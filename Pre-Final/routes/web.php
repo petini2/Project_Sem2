@@ -80,6 +80,8 @@ Route::get('/about', function(){
 //contact
 Route::get('/contact-us', [ContactController::class, 'contact']);
 
+Route::get('/gcontact-us', [ContactController::class, 'gcontact']);
+
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
 
 
